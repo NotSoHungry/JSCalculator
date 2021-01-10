@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+/*  APPLICATION - MAIN */
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 400px;
+  height: 600px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* APPLICATION DISPLAY - GENERAL */
+
+.app-display {
+  border: 1px solid #ebebeb;
+  width: 100%;
+  flex: 1;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5px 10px;
+}
+
+.display-equasion {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.display-number {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 40px;
+}
+/* APPLICATION CONTROLS - GENERAL */
+
+.app-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+/* CONTROL ROW - GENERAL */
+
+.controls-row {
+  width: 100%;
+  flex: 1;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.controls-row:last-of-type {
+  margin-bottom: 0;
+}
+
+/* CONTROL BUTTON - GENERAL */
+
+.control-button {
+  margin-right: 5%;
+  border-radius: 10px;
+  border: 0;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-button:focus {
+  outline: none;
+}
+
+/*  CONTROL BUTTON POSITIONING */
+
+.control-button:last-child {
+  margin-right: 0px;
+}
+
+.control-button.standard {
+  flex: 1;
+}
+
+.control-button.highlight.functional {
+  flex: 2.5;
+}
+
+.control-button.highlight.number {
+  flex: 4;
+}
+
+/* CONTROL BUTTON COLORS AND BORDERS */
+
+.control-button.number {
+  background-color: #f1f3f4;
+  border: 1px solid #f1f3f4;
+}
+
+.control-button.number:hover {
+  background-color: #f8f9fa;
+}
+
+.control-button.number:active {
+  border-color: #dadce0;
+}
+
+.control-button.functional {
+  background: #dadce0;
+  border: solid 1px #dadce0;
+}
+
+.control-button.functional:active {
+  border-color: #70757a;
+}
